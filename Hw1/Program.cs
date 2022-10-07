@@ -67,20 +67,20 @@ class Programm
          * сортировка простыми включениями 
          */
 
-        //SimpleInclusionsSorting inclusionsSorting = new SimpleInclusionsSorting();
+        SimpleInclusionsSorting inclusionsSorting = new SimpleInclusionsSorting();
 
-        //sw.Start();
-        //inclusionsSorting.SortInsertion(Arr); // сам метод сортировки
-        //sw.Stop();
-        //timeTaken = sw.Elapsed;
+        sw.Start();
+        inclusionsSorting.SortInsertion(Arr); // сам метод сортировки
+        sw.Stop();
+        timeTaken = sw.Elapsed;
 
-        //Console.WriteLine("Время выполнения сортировки простыми включениями (StopWatch): " + timeTaken.ToString(@"m\:ss\.fff"));
+        Console.WriteLine("Время выполнения сортировки простыми включениями (StopWatch): " + timeTaken.ToString(@"m\:ss\.fff"));
 
-        //t = new Timing();
-        //t.StartTime();
-        //inclusionsSorting.SortInsertion(Arr); // сам метод сортировки
-        //t.StopTime();
-        //Console.WriteLine($"Время выполнения сортировка простыми включениями (Timing): {t.Result().ToString()}");
+        t = new Timing();
+        t.StartTime();
+        inclusionsSorting.SortInsertion(Arr); // сам метод сортировки
+        t.StopTime();
+        Console.WriteLine($"Время выполнения сортировка простыми включениями (Timing): {t.Result().ToString()}");
 
         /*
          * сортировка простым выбором 
